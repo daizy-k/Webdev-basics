@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Divs and CSS Basics</title>
+
+  <!-- Google Font as recommended in class -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Internal CSS using preferred <style> tag in <head> -->
+  <style>
+    /* Tag selector targeting the body element */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8fafc; /* Hexadecimal color code */
+      color: #1e293b;            /* Text color */
+      margin: 20px;
+    }
+
+    /* Tag selector targeting all h1 elements */
+    h1 {
+      text-align: center; /* Centering text */
+      font-size: 2rem;    /* rem units for proportional scaling */
+      color: #312e81;
+    }
+
+    /* Outer container div */
+    .container {
+      width: 80%;
+      margin: auto;               /* margin: auto centers horizontally */
+      background-color: #e2e8f0;
+      padding: 20px;              /* Inner spacing */
+      border: 2px solid #94a3b8;  /* Solid border with color */
+    }
+
+    /* Inner divs inside the container */
+    .inner-box {
+      background-color: #ffffff;
+      padding: 15px;
+      margin: 10px 0;             /* Outer spacing between boxes */
+      border: 1px solid #cbd5e1;
+    }
+
+    /* Class selector for cherry-picking specific elements */
+    .highlight {
+      background-color: #fef3c7;
+      border: 2px dotted #d97706; /* Dotted border */
+      color: #92400e;
+    }
+
+    /* Multiple classes demonstration */
+    .text-center {
+      text-align: center;
+    }
+
+    .border-dotted {
+      border: 2px dotted #312e81;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>HTML Divs &amp; CSS Basics</h1>
+
+  <!-- 1. Inline CSS shown first (as demonstrated in class) -->
+  <h2>1. Inline CSS Example</h2>
+  <div style="background-color: #dbeafe; color: #1e40af; padding: 10px; border: 1px solid #3b82f6;">
+    This div is styled using <strong>inline CSS</strong>: <code>style="background-color: #dbeafe; padding: 10px;"</code>
+  </div>
+
+  <br>
+
+  <!-- 2. Nested Divs: Outer container holding smaller inner divs -->
+  <h2>2. Nested Divs (Outer Container Holding Inner Divs)</h2>
+  
+  <div class="container">
+    <p><strong>Outer Container Div:</strong> centered using <code>margin: auto</code> with <code>padding: 20px</code></p>
+
+    <!-- Inner Div 1 -->
+    <div class="inner-box">
+      <h3>Inner Div 1</h3>
+      <p>Content like headings and paragraphs are placed inside inner divs.</p>
+    </div>
+
+    <!-- Inner Div 2 with a class selector (.highlight) -->
+    <div class="inner-box highlight">
+      <h3>Inner Div 2 (Class: .highlight)</h3>
+      <p>Styled using class selector <code>.highlight</code> with a dotted border and hex colors.</p>
+    </div>
+
+    <!-- Inner Div 3 with multiple classes -->
+    <div class="inner-box text-center border-dotted">
+      <h3>Inner Div 3 (Multiple Classes)</h3>
+      <p>Uses two classes: <code>class="inner-box text-center border-dotted"</code></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

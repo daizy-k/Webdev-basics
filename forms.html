@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      color: #312e81;
+    }
+
+    /* Grouping form items using div */
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="date"],
+    select {
+      width: 300px;
+      padding: 8px;
+      border: 1px solid #cccccc;
+    }
+
+    input[type="submit"] {
+      background-color: #312e81;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>HTML Forms</h1>
+
+  <form action="#" method="post">
+
+    <!-- 1. Text Input -->
+    <div class="form-group">
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="firstName" placeholder="Jane" required>
+    </div>
+
+    <!-- 2. Email Input -->
+    <div class="form-group">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="jane@yahoo.com" required>
+    </div>
+
+    <!-- 3. Password Input -->
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required>
+    </div>
+
+    <!-- 4. Number Input with min, max, step -->
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="1" max="100" step="1" placeholder="18">
+    </div>
+
+    <!-- 5. Date Input (American format YYYY-MM-DD used in code) -->
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" value="2008-10-19">
+    </div>
+
+    <!-- 6. Radio Buttons (Must share same name so only one can be selected) -->
+    <div class="form-group">
+      <label>Gender:</label>
+      <input type="radio" id="female" name="gender" value="F" required>
+      <label for="female" style="display:inline; font-weight:normal;">Female</label>
+
+      <input type="radio" id="male" name="gender" value="M">
+      <label for="male" style="display:inline; font-weight:normal;">Male</label>
+    </div>
+
+    <!-- 7. Checkboxes (Allows multiple selections) -->
+    <div class="form-group">
+      <label>Hobbies / Skills:</label>
+      <input type="checkbox" id="html" name="hobbies" value="html">
+      <label for="html" style="display:inline; font-weight:normal;">HTML</label>
+
+      <input type="checkbox" id="css" name="hobbies" value="css">
+      <label for="css" style="display:inline; font-weight:normal;">CSS</label>
+
+      <input type="checkbox" id="js" name="hobbies" value="js">
+      <label for="js" style="display:inline; font-weight:normal;">JavaScript</label>
+    </div>
+
+    <!-- 8. Select Dropdown -->
+    <div class="form-group">
+      <label for="course">Select Course:</label>
+      <select id="course" name="course">
+        <option value="webdev">Web Development</option>
+        <option value="python">Python Programming</option>
+        <option value="cyber">Cyber Security</option>
+      </select>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="form-group">
+      <input type="submit" value="Submit Form">
+    </div>
+
+  </form>
+
+</body>
+
+</html>
