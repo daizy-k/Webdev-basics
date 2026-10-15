@@ -4,7 +4,7 @@ A collection of foundational web development exercises and projects. Developed a
 
 ---
 
-## 🚀 Projects & Modules Overview
+##  Projects & Modules Overview
 
 This repository contains clean, semantic HTML5 implementations and modern CSS styling covering foundational web design concepts:
 
@@ -19,7 +19,7 @@ This repository contains clean, semantic HTML5 implementations and modern CSS st
 
 ---
 
-## 🎨 Core CSS & Design Concepts Applied
+##  Core CSS & Design Concepts Applied
 
 - **Box Model**: Margin (outer spacing & horizontal centering via `margin: auto`), Border (`solid`, `dotted`, `dashed`), Padding (inner spacing between content and edge).
 - **Table Borders**: `border-collapse: collapse;` to merge double borders into crisp single lines.
@@ -29,7 +29,7 @@ This repository contains clean, semantic HTML5 implementations and modern CSS st
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 Webdev-basics/
@@ -45,7 +45,7 @@ Webdev-basics/
 
 ---
 
-## 💻 How to View Locally
+##  How to View Locally
 
 1. Clone or download the repository:
    ```bash
@@ -55,7 +55,7 @@ Webdev-basics/
 
 ---
 
-## 📅 Curriculum Roadmap
+##  Curriculum Roadmap
 
 - [x] HTML Basics (lists, tables, links, forms, divs)
 - [x] CSS Foundations (box model, hex colors, font-family, rem units, style tags)
