@@ -1,127 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Forms</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forms</title>
+<style>
 
-    h1 {
-      color: #312e81;
-    }
 
-    /* Grouping form items using div */
-    .form-group {
-      margin-bottom: 15px;
-    }
 
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    input[type="number"],
-    input[type="date"],
-    select {
-      width: 300px;
-      padding: 8px;
-      border: 1px solid #cccccc;
-    }
-
-    input[type="submit"] {
-      background-color: #312e81;
-      color: #ffffff;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
-  <h1>HTML Forms</h1>
+<!-- text, email, password, number, date, radio, checkbox, select, submit -->
 
-  <form action="#" method="post">
+<form>
+<label for="names">Names</label>
+<input type="text" required id="names" name="full_name" placeholder="Jane Doe">
 
-    <!-- 1. Text Input -->
-    <div class="form-group">
-      <label for="first-name">First Name:</label>
-      <input type="text" id="first-name" name="firstName" placeholder="Jane" required>
-    </div>
+<br>
+<label for="email">Email</label>
+<input type="email" required id="email" name="email" placeholder="doe@example.com">
 
-    <!-- 2. Email Input -->
-    <div class="form-group">
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" placeholder="jane@yahoo.com" required>
-    </div>
+<br>
 
-    <!-- 3. Password Input -->
-    <div class="form-group">
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" placeholder="Enter password" required>
-    </div>
+<label for="pass">Password</label>
+<input type="password" required id="pass" name="pass" placeholder="*******">
 
-    <!-- 4. Number Input with min, max, step -->
-    <div class="form-group">
-      <label for="age">Age:</label>
-      <input type="number" id="age" name="age" min="1" max="100" step="1" placeholder="18">
-    </div>
+<br>
+<label for="weight">Weight</label>
+<input type="number" min="30" max="250" step="0.01" required id="weight" name="weight"
+placeholder="Weight in Kgs">
 
-    <!-- 5. Date Input (American format YYYY-MM-DD used in code) -->
-    <div class="form-group">
-      <label for="dob">Date of Birth:</label>
-      <input type="date" id="dob" name="dob" value="2008-10-19">
-    </div>
+<br>
+<label for="dob">Date of Birth</label>
+<input type="date" min="1940-01-01" max="2008-12-31" required id="dob" name="dob">
 
-    <!-- 6. Radio Buttons (Must share same name so only one can be selected) -->
-    <div class="form-group">
-      <label>Gender:</label>
-      <input type="radio" id="female" name="gender" value="F" required>
-      <label for="female" style="display:inline; font-weight:normal;">Female</label>
 
-      <input type="radio" id="male" name="gender" value="M">
-      <label for="male" style="display:inline; font-weight:normal;">Male</label>
-    </div>
 
-    <!-- 7. Checkboxes (Allows multiple selections) -->
-    <div class="form-group">
-      <label>Hobbies / Skills:</label>
-      <input type="checkbox" id="html" name="hobbies" value="html">
-      <label for="html" style="display:inline; font-weight:normal;">HTML</label>
+<!-- name must be the same for radio buttons -->
+<br>
+<input type="radio" id="m" name="gender" value="F">
+<label for="m">Female</label>
 
-      <input type="checkbox" id="css" name="hobbies" value="css">
-      <label for="css" style="display:inline; font-weight:normal;">CSS</label>
+<br>
+<input type="radio" id="f" name="gender" value="M">
+<label for="f">Male</label>
 
-      <input type="checkbox" id="js" name="hobbies" value="js">
-      <label for="js" style="display:inline; font-weight:normal;">JavaScript</label>
-    </div>
+<hr>
 
-    <!-- 8. Select Dropdown -->
-    <div class="form-group">
-      <label for="course">Select Course:</label>
-      <select id="course" name="course">
-        <option value="webdev">Web Development</option>
-        <option value="python">Python Programming</option>
-        <option value="cyber">Cyber Security</option>
-      </select>
-    </div>
+<input type="checkbox" id="x" name="food" value="P001">
+<label for="x">Pizza</label>
 
-    <!-- Submit Button -->
-    <div class="form-group">
-      <input type="submit" value="Submit Form">
-    </div>
+<br>
+<input type="checkbox" id="y" name="food">
+<label for="y">Burger</label>
 
-  </form>
+<br>
+<input type="checkbox" id="z" name="food">
+<label for="z">Ugali</label>
+<p>Lorem ipsum dolor sit amet</p>
+
+
+
+<br>
+<select>
+<option>Select County</option>
+<option value="1">Mombasa</option>
+<option value="2">Nairobi</option>
+<option value="3">Nyeri</option>
+<option value="4">Kisumu</option>
+<option value="5">Kisii</option>
+</select>
+
+
+
+<br>
+<button>Register</button>
+
+</form>
 
 </body>
 
