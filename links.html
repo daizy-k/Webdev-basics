@@ -1,90 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Links</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links or Anchors</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 50px;
+        }
 
-    h1, h2 {
-      color: #312e81;
-    }
+        .nav-links>ul {
+            display: flex;
+        }
 
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
+        .nav-links li {
+            list-style-type: none;
+        }
 
-    a:hover {
-      text-decoration: underline;
-    }
+        .nav-links a{
+            text-decoration: none;
+            padding: 10px 16px;
+            font-size: 1.2rem;
+            color: rgb(6, 121, 83);
+        }
 
-    .link-section {
-      margin-bottom: 20px;
-    }
-
-    img {
-      border: 1px solid #cccccc;
-      border-radius: 4px;
-    }
-  </style>
+        .nav-links a:hover{
+            color: rgb(1, 44, 30);
+            border-bottom: 2px solid rgb(1, 44, 30);
+        }
+    </style>
 </head>
 
 <body>
 
-  <h1>HTML Links</h1>
+    <nav>
+        <div class="logo">Home Away</div>
+        <div class="nav-links">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Team</a>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                </li>
+                <li>
+                    <a href="#">Pricing</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-  <!-- 1. Internal Links to local files -->
-  <div class="link-section">
-    <h2>Internal Links</h2>
-    <p>Click these links to navigate to other pages in this project:</p>
-    <ul>
-      <li><a href="tables.html">Tables Page</a></li>
-      <li><a href="list.html">Lists Page</a></li>
-      <li><a href="forms.html">Forms Page</a></li>
-      <li><a href="divs.html">Divs Page</a></li>
-    </ul>
-  </div>
+    <a href="forms.html">Forms</a>
 
-  <!-- 2. External Links using target="_blank" -->
-  <div class="link-section">
-    <h2>External Links (target="_blank")</h2>
-    <p>These links open in a new tab:</p>
-    <ul>
-      <li><a href="https://github.com/daizy-k/Webdev-basics" target="_blank">My GitHub Repository</a></li>
-      <li><a href="https://fonts.google.com" target="_blank">Google Fonts</a></li>
-      <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
-    </ul>
-  </div>
+    <a href="tables.html">Tables</a>
 
-  <!-- 3. Links Wrapping Text -->
-  <div class="link-section">
-    <h2>Link Wrapping Text</h2>
-    <p>You can read more about HTML on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs</a> website.</p>
-  </div>
+    <a href="list.html">List</a>
 
-  <!-- 4. Links Wrapping an Image -->
-  <div class="link-section">
-    <h2>Link Wrapping an Image</h2>
-    <p>Click the image below to visit the GitHub repository:</p>
-    <a href="https://github.com/daizy-k/Webdev-basics" target="_blank">
-      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="80" height="80">
-    </a>
-  </div>
+    <a href="https://www.instagram.com/m10_official/" target="_blank">Insta</a>
 
-  <!-- 5. Links Wrapping Both Text and an Image -->
-  <div class="link-section">
-    <h2>Link Wrapping Both Text and Image</h2>
-    <a href="https://github.com/daizy-k/Webdev-basics" target="_blank" style="display: inline-flex; align-items: center; gap: 10px; border: 1px solid #ccc; padding: 10px;">
-      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="40" height="40">
-      <span><strong>Visit Webdev-basics on GitHub &rarr;</strong></span>
-    </a>
-  </div>
 
 </body>
 
